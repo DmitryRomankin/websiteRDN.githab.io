@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Lato, serif;
+  font-size:large;
+  background: url(/source/images/background.jpeg);
+  background-repeat:repeat-y;
+  background-size: center;
+  background-position: auto;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+p {
+  color: white;
+}
+
+h1,
+h2 {
+  display: flex;
+  color: white;
+  text-align: center;
+}
+
+.nav-link {
+  color: rgb(240, 214, 128);
+}
+
+.navbar-nav .nav-link.active {
+  color: brown;
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+
+.navbar-toggler {
+  background-color: rgb(240, 214, 128);
+}
+
+.news-column {
+  background: linear-gradient(270deg, #e9b84e 0%, #789187 100%);
+  color: white;
+}
+
+.card {
+  background: linear-gradient(270deg, #e9b84e 0%, #789187 100%);
+  color: white;
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+}
+
+.carousel-text,
+.carousel-text a,
+.footer-text,
+.footer-text a {
+  color: white;
+  margin: auto auto;
+  text-decoration: none;
+}
+
+#footer-email {
+  width: 250px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#footer-email::placeholder {
+  color: grey;
+}
+
+#footer-email-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: brown;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#footer-email-btn:hover {
+  cursor: pointer;
+  background-color: rgb(42, 151, 165);
+  transition: all 0.3s ease-out;
+}
+
+footer {
+  background: linear-gradient(270deg, #e99371 0%, #0c0326 100%);
+  color: white;
+}
+
+.btn-outline-primary {
+  background: linear-gradient(270deg, #f08f11 0%, #789187 100%);
+  color: white;
+}
+
+.media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-animation,
+.telegram-animation {
+  animation: RDNAnim 1s linear 1s 5 normal forwards;
+}
+
+@keyframes RDNAnim {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media (max-width: 755px) {
+  .carousel-indicators {
+    display: none;
+  }
+}

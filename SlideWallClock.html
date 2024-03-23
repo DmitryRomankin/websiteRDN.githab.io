@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="source/styles/slides.css">
+    <title>RDN</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="watch">
+            <img src="source/images/Slides/Wall Clock/1.jpg" alt="Wall Clock">
+            <img src="source/images/Slides/Wall Clock/2.jpg" alt="Wall Clock">
+            <img src="source/images/Slides/Wall Clock/3.jpg" alt="Wall Clock">
+            <img src="source/images/Slides/Wall Clock/4.jpg" alt="Wall Clock">
+
+
+
+        </div>
+    </div>
+
+    <script>
+        var indexValue = 0;
+        function Slides() {
+            setTimeout(Slides, 4500);
+            var a;
+            const img = document.querySelectorAll("img");
+            for (a = 0; a < img.length; a++) {
+                img[a].style.display = "none";
+            }
+            indexValue++;
+            if (indexValue > img.length) {
+                indexValue = 1
+            }
+            img[indexValue - 1].style.display = "block";
+        }
+        Slides();
+
+
+    </script>
+
+</body>
+
+</html>

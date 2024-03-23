@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/source/images/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1900px;
+    height: 1080px;
+    overflow: hidden;
+    border: 5px solid white;
+}
+
+.container .watch {
+    width: 100%;
+    height: 100%;
+}
+
+.watch {
+    width: 100%;
+    height: 100%;
+}

@@ -7,7 +7,7 @@ html {
 body {
   font-family: Lato, serif;
   font-size:large;
-  background: linear-gradient(270deg, #e9b84e 0%, #789187 100%);
+  background: rgb(240, 214, 128);
   background-repeat:repeat-y;
   background-size: center;
   background-position: auto;

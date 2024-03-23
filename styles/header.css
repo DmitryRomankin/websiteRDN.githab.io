@@ -7,7 +7,7 @@ html {
 body {
   font-family: Lato, serif;
   font-size:large;
-  background: url(/images/background.jpeg);
+  background: url(images/background.jpeg);
   background-repeat:repeat-y;
   background-size: center;
   background-position: auto;
